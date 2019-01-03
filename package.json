@@ -1,0 +1,17 @@
+{
+  "name": "damo-loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Damo-web/damo-loader.git",
+  "author": "snowball <snowballer0705@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --config example/webpack.config.js --inline --hot",
+    "build": "webpack --config example/webpack.config.js --hide-modules"
+  },
+  "devDependencies": {
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
