@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, './main.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
@@ -20,5 +20,8 @@ module.exports = {
     alias: {
       'vue-loader': require.resolve('../lib')
     }
-  }
+  },
+  plugins:[
+    
+  ]
 };

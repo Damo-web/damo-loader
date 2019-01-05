@@ -6,7 +6,7 @@
   "author": "snowball <snowballer0705@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-dev-server --config example/webpack.config.js --inline --hot",
+    "serve": "webpack-dev-server --config example/webpack.config.js --inline --hot",
     "build": "webpack --config example/webpack.config.js --hide-modules"
   },
   "devDependencies": {
