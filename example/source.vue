@@ -1,19 +1,26 @@
-<template>
-  <div class="example">{{ msg }}</div>
+<template lang="pug">
+div(ok)
+  h1(:class="$style.red") hello
 </template>
 
 <script>
 export default {
   data () {
     return {
-      msg: 'Hello world!'
+      msg: 'fesfff'
     }
   }
 }
 </script>
 
-<style>
-.example {
+<style scoped>
+.red {
   color: red;
 }
 </style>
+
+<foo>
+export default comp => {
+  console.log(comp.options.data())
+}
+</foo>

@@ -1,10 +1,12 @@
-const path = require('path');
+const path = require('path')
+const DamoLoaderPlugin = require('../lib/plugin')
+
 
 module.exports = {
   mode: 'development',
   entry: path.resolve(__dirname, './main.js'),
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
@@ -12,16 +14,16 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'damo-loader'
       }
     ]
   },
   resolveLoader: {
     alias: {
-      'vue-loader': require.resolve('../lib')
+      'damo-loader': require.resolve('../lib')
     }
   },
-  plugins:[
-    
+  plugins: [
+    new DamoLoaderPlugin()
   ]
-};
+}

@@ -10,8 +10,15 @@
     "build": "webpack --config example/webpack.config.js --hide-modules"
   },
   "devDependencies": {
+    "vue": "^2.5.21",
+    "vue-template-compiler": "^2.5.21",
     "webpack": "^4.28.3",
     "webpack-cli": "^3.2.0",
     "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "@vue/component-compiler-utils": "^2.4.0",
+    "hash-sum": "^1.0.2",
+    "loader-utils": "^1.2.3"
   }
 }
