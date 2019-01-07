@@ -1,13 +1,12 @@
-<template lang="pug">
-div(ok)
-  h1(:class="$style.red") hello
+<template>
+  <div class="red">{{msg}}</div>
 </template>
 
 <script>
 export default {
   data () {
     return {
-      msg: 'fesfff'
+      msg: 'hello loader'
     }
   }
 }
