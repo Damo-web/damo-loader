@@ -14,7 +14,8 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'damo-loader'
+        include: path.resolve(__dirname, 'src'),
+        loader: 'damo-loader',
       }
     ]
   },
