@@ -6,7 +6,7 @@
 export default {
   data () {
     return {
-      msg: 'hello loader'
+      msg: 'hello loader!'
     }
   }
 }
@@ -18,8 +18,3 @@ export default {
 }
 </style>
 
-<foo>
-export default comp => {
-  console.log(comp.options.data())
-}
-</foo>

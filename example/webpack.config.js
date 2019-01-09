@@ -10,11 +10,14 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
+  devServer: {
+    stats: "minimal",
+    contentBase: __dirname
+  },
   module: {
     rules: [
       {
         test: /\.vue$/,
-        include: path.resolve(__dirname, 'src'),
         loader: 'damo-loader',
       }
     ]
