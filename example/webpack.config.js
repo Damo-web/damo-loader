@@ -19,6 +19,33 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'damo-loader',
+      },
+      // example configuring CSS Modules
+      {
+        test: /\.css$/,
+        oneOf: [
+          // this applies to <style module>
+          {
+            resourceQuery: /module/,
+            use: [
+              'vue-style-loader',
+              {
+                loader: 'css-loader',
+                options: {
+                  modules: true,
+                  localIdentName: '[local]_[hash:base64:8]'
+                }
+              }
+            ]
+          },
+          // this applies to <style> or <style scoped>
+          {
+            use: [
+              'vue-style-loader',
+              'css-loader'
+            ]
+          }
+        ]
       }
     ]
   },
